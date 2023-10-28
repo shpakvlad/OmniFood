@@ -199,4 +199,11 @@ header .container nav a:visited {
 }
 
 header .container nav a:hover,
-header .container nav a:active {border-bottom: 4px solid #e67e22;}
+header .container nav a:active {
+    border-bottom: 4px solid #e67e22;
+}
+
+/************************************************/
+/*                   FEATURES                   */
+/************************************************/
+
