@@ -78,7 +78,7 @@ h2:after {
 }
 
 .box p {
-    font-size: 90%;
+    font-size: 90%; /* ===== 18px ===== */
     line-height: 145%;
 }
 
@@ -206,6 +206,14 @@ header .container nav a:active {
 /************************************************/
 /*                   FEATURES                   */
 /************************************************/
+.section-features .container:not(:first-of-type){
+    display: flex;
+}
 .section-features, .long-text {
     margin-bottom: 30px;
+}
+
+.features-card {
+    width: 23.8%;
+    margin: 1% 0 1% 1.6%;
 }
