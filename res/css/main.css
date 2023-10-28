@@ -206,10 +206,11 @@ header .container nav a:active {
 /************************************************/
 /*                   FEATURES                   */
 /************************************************/
-.section-features .container:not(:first-of-type){
+.section-features .container:not(:first-of-type) {
     display: flex;
 }
-.section-features, .long-text {
+.section-features,
+.long-text {
     margin-bottom: 30px;
 }
 
@@ -221,4 +222,36 @@ header .container nav a:active {
 /************************************************/
 /*                    MEALS                     */
 /************************************************/
+.section-meals {
+    padding: 0;
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
 
+.meals-showcase li {
+    display: block;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover {
+        transform: scale(1.035);
+        opacity: 1;
+    }
+}
