@@ -206,4 +206,6 @@ header .container nav a:active {
 /************************************************/
 /*                   FEATURES                   */
 /************************************************/
-
+.section-features, .long-text {
+    margin-bottom: 30px;
+}
