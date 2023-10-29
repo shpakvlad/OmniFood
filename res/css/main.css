@@ -402,3 +402,48 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/************************************************/
+/*                    PLANS                     */
+/************************************************/
+.section-plans { background-color: #f4f4f4; }
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 5px 1px #d6d5d5;
+}
+
+.plan-box div { padding: 15px; }
+
+.plan-box div:first-child { border-radius: 2px 2px 0 0; }
+
+.plan-box div:last-child {
+    text-align: center;
+    padding-bottom: 35px;
+    border: 0 0 2px 2px;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;    
+    font-weight: 300;
+    color: #e67e22
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal { font-size: 80%; }
+
+.plan-box ul { list-style: none; }
+
+.plan-box ul li { padding: 5px 0; }
+
+.plan-box ul li span { color: #c0c0c0; }
+
+
