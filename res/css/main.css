@@ -235,17 +235,15 @@ header .container nav a:active {
 /************************************************/
 .section-meals {
     padding: 0;
-    display: flex;
-    flex-flow: column; /* ===== ==== ===== */
-    justify-content: center;
 }
+
 .meals-showcase {
     list-style: none;
     width: 100%;
     display: flex;
     /* flex-flow: column; */ /* ===== ==== ===== */
-    flex-wrap: wrap;
-    align-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
 }
 
 .meals-showcase li {

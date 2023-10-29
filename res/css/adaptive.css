@@ -10,7 +10,6 @@
 /************************************************/
 /*                     900                      */
 /************************************************/
-
 @media (max-width: 900px) {
     html {
         font-size: 16px;
@@ -37,5 +36,50 @@
     /* ===== TESTIMONIALS ===== */
     .section-testimonials .container:last-of-type blockquote:not(:last-child) {
         margin-bottom: 50px;
+    }
+}
+
+/************************************************/
+/*                     800                      */
+/************************************************/
+@media (max-width: 800px) {
+    /* ===== FEATURES ===== */
+    .section-features .container:not(:first-of-type) {
+        flex-flow: column;
+    }
+
+    .section-features .container:not(:first-of-type) .box {
+        margin: 0;
+        padding: 0 20%;
+    }
+
+    .section-features .container:not(:first-of-type) .box:not(:last-of-type) {
+        margin-bottom: 50px;
+    }
+
+    /* ===== MEALS ===== */
+    .meals-showcase {
+        flex-flow: column;
+    }
+
+    .meals-showcase:last-of-type {
+        display: none;
+    }
+    .meals-showcase li {
+        width: 60%;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .section-testimonials .container:last-of-type,
+    .section-plans .container:last-of-type {
+        flex-flow: column;
+        padding: 0 20%;
+        align-items: center;
+    }
+
+    /* ===== PLANS ===== */
+    .section-plans .container:last-of-type .plan-box:not(:first-of-type) {
+        margin: 0;
+        margin-top: 50px;
     }
 }
