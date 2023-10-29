@@ -25,7 +25,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--accent-color); /* цвет бегунка */
     border-radius: 20px; /*  округлось бегунка */
-    border: 2px solid var(--accent-color); /* отступ вокруг бегунка */
+    /* border: 2px solid var(--accent-color); отступ вокруг бегунка */
 }
 
 /************************************************/
@@ -185,10 +185,7 @@ header .container {
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40vh;
 }
 
 .logo {
