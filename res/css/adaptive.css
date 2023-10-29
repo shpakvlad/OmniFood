@@ -13,5 +13,14 @@
 /************************************************/
 
 @media (max-width: 900px) {
-    
+    .section-features .container:not(:first-of-type) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }  
+
+    .box {
+        width: 100%;
+    }
 }

@@ -434,6 +434,10 @@ cite img {
     box-shadow: 5px 5px 5px 1px #d6d5d5;
 }
 
+.plan-box:first-of-type {
+    margin-left: 0;
+}
+
 .plan-box div {
     padding: 15px;
 }
