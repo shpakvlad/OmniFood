@@ -330,6 +330,9 @@ header .container nav a:active {
 /************************************************/
 /*                    CITIES                    */
 /************************************************/
+.section-cities .container:last-of-type {
+ display: flex;
+
 .box img {
     height: auto;
     width: 100%;
