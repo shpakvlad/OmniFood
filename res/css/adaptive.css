@@ -104,6 +104,11 @@
         flex-flow: column;
     }
 
+    .app-screen {
+        width: 40%;
+        margin: 0;
+    }
+
     /* ===== FORM ===== */
     .contact-form .line {
         flex-flow: column;
@@ -111,5 +116,53 @@
 
     .contact-form .line label {
         width: 100%;
+    }
+}
+
+/************************************************/
+/*                     500                      */
+/************************************************/
+@media (max-width: 500px) {
+    .long-text {
+        margin: auto;
+        width: 85%;
+    }
+
+    .section-features .container:not(:first-of-type) .box {
+        padding: 0 10%;
+    }
+
+    .meals-showcase li {
+        width: 70%;
+    }
+
+    .section-testimonials .container:last-of-type,
+    .section-plans .container:last-of-type {
+        padding: 0 10%;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    footer .container {
+        flex-flow: column;
+    }
+
+    .social-links {
+        margin-top: 50px;
+    }
+}
+
+/************************************************/
+/*                     450                      */
+/************************************************/
+@media (max-width: 420px) {
+    .works-step {
+        flex-flow: column;
+    }
+
+    .works-step div {
+        margin-bottom: 20px;
     }
 }
