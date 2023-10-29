@@ -1,7 +1,6 @@
 /************************************************/
 /*                     1180                     */
 /************************************************/
-
 @media (max-width: 1180px) {
     .container {
         padding: 0 1%;
@@ -13,28 +12,30 @@
 /************************************************/
 
 @media (max-width: 900px) {
-    .section-features .container:not(:first-of-type) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-    }  
-
-    .box {
-        width: 100%;
+    html {
+        font-size: 16px;
+    }
+    section {
+        padding: 50px 0;
     }
 
-    .section-cities .container:last-of-type {
-        flex-flow: column;
-        padding: 0 20%;
+    /* ===== MEALS ===== */
+    .box {
+        width: 100%;
     }
 
     .box:not(:last-of-type) {
         margin-bottom: 50px;
     }
 
-    .section-testimonials .container:last-of-type {
+    /* ===== CITIES ===== */
+    .section-cities .container:last-of-type {
         flex-flow: column;
         padding: 0 20%;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .section-testimonials .container:last-of-type blockquote:not(:last-child) {
+        margin-bottom: 50px;
     }
 }
