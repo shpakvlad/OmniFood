@@ -23,4 +23,18 @@
     .box {
         width: 100%;
     }
+
+    .section-cities .container:last-of-type {
+        flex-flow: column;
+        padding: 0 20%;
+    }
+
+    .box:not(:last-of-type) {
+        margin-bottom: 50px;
+    }
+
+    .section-testimonials .container:last-of-type {
+        flex-flow: column;
+        padding: 0 20%;
+    }
 }
