@@ -408,6 +408,10 @@ cite img {
 /************************************************/
 .section-plans { background-color: #f4f4f4; }
 
+.section-plans .container:last-of-type {
+    display: flex;
+}
+
 .plan-box {
     background-color: white;
     border-radius: 5px;
