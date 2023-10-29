@@ -83,3 +83,33 @@
         margin-top: 50px;
     }
 }
+
+/************************************************/
+/*                     650                      */
+/************************************************/
+@media (max-width: 650px) {
+    /* ===== HEADER ===== */
+    header .container {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header .container nav {
+        flex-flow: column;
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    /* ===== STEPS ===== */
+    .steps-box {
+        flex-flow: column;
+    }
+
+    /* ===== FORM ===== */
+    .contact-form .line {
+        flex-flow: column;
+    }
+
+    .contact-form .line label {
+        width: 100%;
+    }
+}
