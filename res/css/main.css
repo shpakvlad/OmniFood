@@ -458,8 +458,9 @@ cite img {
     margin: 0 auto;     
 }
 
-.contact-form .container {
+.contact-form {
     display: flex;
+    flex-flow: column;
 }
 
 input[type=text],
@@ -477,3 +478,14 @@ textarea { height: 100px; }
 input[type=checkbox] { margin: 10px 5px 10px 0; }
 
 *:focus { outline: none; }
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;  
+}
+
+.line label {
+    width: 250px;
+}
