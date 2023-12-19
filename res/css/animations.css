@@ -1,0 +1,59 @@
+/************************************************/
+/*                  ANIMATIONS                  */
+/************************************************/
+nav {
+    position: relative;
+}
+
+header nav a {
+    top: -80px;
+    position: relative;
+}
+
+header nav a:nth-child(1) {
+    animation: slide-from-top 1s ease 1s forwards;  
+}
+
+header nav a:nth-child(2) {
+    animation: slide-from-top 1s ease 1.2s forwards ;
+}
+
+header nav a:nth-child(3) {
+    animation: slide-from-top 1s ease 1.4s forwards ; 
+}
+
+header nav a:nth-child(4) {
+    animation: slide-from-top 1s ease 1.6s forwards ;
+}
+
+header nav a:nth-child(5) {
+    animation: slide-from-top 1s ease 1.8s forwards; 
+} 
+
+@keyframes slide-from-top {
+    0% {
+        top: -80px;
+    }
+
+    100% {
+        top: 0px;
+    }    
+}
+
+/* logo */
+.logo {
+    position: relative;
+    animation: roll-from-right 1.4s ease 0.5s forwards;
+    left: -500px;
+}
+
+@keyframes roll-from-right {
+    0% {
+        left: -500px;
+    }
+
+    100% {
+        left: 0;
+        transform: rotateZ(360deg);
+    }   
+}

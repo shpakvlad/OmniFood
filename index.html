@@ -14,16 +14,28 @@
         <link rel="stylesheet" href="./res/css/vars.css" />
         <link rel="stylesheet" href="./res/css/fonts.css" />
         <link rel="stylesheet" href="./res/css/main.css" />
+        <link rel="stylesheet" href="./res/css/animations.css" />
         <link rel="stylesheet" href="./res/css/adaptive.css" />
         <link rel="stylesheet" href="./res/css/vendors/ionicons.min.css" />
 
-        <script defer src="./res/js/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <script
             defer
             src="https://unpkg.com/ionicons@4.5.5/dist/ionicons/ionicons.dy5iahpg.js"
             data-resources-url="https://unpkg.com/ionicons@4.5.5/dist/ionicons/"
             data-namespace="ionicons"
         ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <!--------------------------------------------->
@@ -40,7 +52,8 @@
                     <a href="#">Food delivery</a>
                     <a href="#">How it works</a>
                     <a href="#">Our cities</a>
-                    <a href="#">Sign up</a>
+                    <a href="#" id="sign-up__btn">Sign up</a>
+                    <a href="#" id="log-in__btn">Log in</a>
                 </nav>
 
                 <!-- hero text -->
@@ -210,7 +223,7 @@
 
             <div class="container steps-box">
                 <img
-                    class="app-screen"
+                    class="animate__animated animate__pulse app-screen animate__infinite animate__fast"
                     src="./res/img/png/app-iPhone.png"
                     alt="Omni food app on iPhone"
                 />
@@ -374,45 +387,155 @@
             </div>
 
             <div class="container">
-                <blockquote>
-                    Omnifood is just awesome! I just launched a startup which
-                    leaves me witestimonials sctionth no time for cooking, so
-                    Omnifood is a life-saver. Now that I got used to it, I
-                    couldn't live without my daily meals!
-                    <cite
-                        ><img
-                            src="./res/img/customers/customer-1.jpg"
-                            alt="Alberto Duncan photo"
-                        />
-                        (Alberto Duncan)</cite
-                    >
-                </blockquote>
-                <blockquote>
-                    Inexpensive, healthy and great-tasting meals, delivered
-                    right to my home. We have lots of food delivery here in
-                    Lisbon, but no one comes even close to Omifood. Me and my
-                    family are so in love!
-                    <cite
-                        ><img
-                            src="./res/img/customers/customer-2.jpg"
-                            alt="Joana Silva photo"
-                        />
-                        (Joana Silva)</cite
-                    >
-                </blockquote>
-                <blockquote>
-                    I was looking for a quick and easy food delivery service in
-                    San Franciso. I tried a lot of them and ended up with
-                    Omnifood. Best food delivery service in the Bay Area. Keep
-                    up the great work!
-                    <cite
-                        ><img
-                            src="./res/img/customers/customer-3.jpg"
-                            alt="Milton Chapman photo"
-                        />
-                        (Milton Chapman)</cite
-                    >
-                </blockquote>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-container">
+                                <blockquote>
+                                    Omnifood is just awesome! I just launched a
+                                    startup which leaves me witestimonials
+                                    sctionth no time for cooking, so Omnifood is
+                                    a life-saver. Now that I got used to it, I
+                                    couldn't live without my daily meals!
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-1.jpg"
+                                            alt="Alberto Duncan photo"
+                                        />
+                                        (Alberto Duncan)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    Inexpensive, healthy and great-tasting
+                                    meals, delivered right to my home. We have
+                                    lots of food delivery here in Lisbon, but no
+                                    one comes even close to Omifood. Me and my
+                                    family are so in love!
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-2.jpg"
+                                            alt="Joana Silva photo"
+                                        />
+                                        (Joana Silva)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    I was looking for a quick and easy food
+                                    delivery service in San Franciso. I tried a
+                                    lot of them and ended up with Omnifood. Best
+                                    food delivery service in the Bay Area. Keep
+                                    up the great work!
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-3.jpg"
+                                            alt="Milton Chapman photo"
+                                        />
+                                        (Milton Chapman)</cite
+                                    >
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-container">
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quisquam repellat facilis
+                                    fugiat sequi deleniti, molestiae maiores
+                                    dolorum quasi, unde reiciendis nulla
+                                    excepturi! Accusamus doloremque quia
+                                    veritatis minus, non eius laudantium!
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-1.jpg"
+                                            alt="Alberto Duncan photo"
+                                        />
+                                        (Alberto Duncan)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Provident deserunt quod
+                                    inventore harum minus, consequuntur quaerat
+                                    deleniti atque vero illo tenetur nulla omnis
+                                    dicta enim eveniet eaque quia distinctio.
+                                    Consectetur quasi maiores voluptates
+                                    distinctio dignissimos odio quas itaque
+                                    necessitatibus, illo recusandae pariatur
+                                    debitis consequuntur impedit?
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-2.jpg"
+                                            alt="Joana Silva photo"
+                                        />
+                                        (Joana Silva)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ipsam ratione voluptates
+                                    harum.
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-3.jpg"
+                                            alt="Milton Chapman photo"
+                                        />
+                                        (Milton Chapman)</cite
+                                    >
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-container">
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Asperiores eos magni nam
+                                    dolorem voluptatibus et ipsum distinctio
+                                    molestias illo accusantium, culpa nisi
+                                    dicta, tempora hic alias voluptatem.
+                                    Doloribus cum hic consequatur odio. Officiis
+                                    sint illo praesentium asperiores ut
+                                    blanditiis quae?
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-1.jpg"
+                                            alt="Alberto Duncan photo"
+                                        />
+                                        (Alberto Duncan)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quos quam alias blanditiis
+                                    vitae, nihil nisi exercitationem unde?
+                                    Maxime dicta cum optio libero reprehenderit
+                                    obcaecati, sit officiis incidunt.
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-2.jpg"
+                                            alt="Joana Silva photo"
+                                        />
+                                        (Joana Silva)</cite
+                                    >
+                                </blockquote>
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aut assumenda nulla
+                                    debitis reprehenderit veritatis, repudiandae
+                                    quibusdam nihil non ea cupiditate quod
+                                    laboriosam tempore, aliquam dolor, sed
+                                    magnam dignissimos aspernatur obcaecati.
+                                    <cite
+                                        ><img
+                                            src="./res/img/customers/customer-3.jpg"
+                                            alt="Milton Chapman photo"
+                                        />
+                                        (Milton Chapman)</cite
+                                    >
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -686,6 +809,53 @@
                 <p>Copyright &copy; 2019 by Omnifood. All right reseverd.</p>
             </div>
         </footer>
+
+        <!-- modal -->
+        <dialog class="dialog-sign">
+            <!-- <div id="modal-box">  -->
+            <h3>Sign up</h3>
+            <label for="name">User name:</label>
+            <input type="text" name="name" id="user-name" required />
+            <label for="password">User password:</label>
+            <input type="text" name="password" id="user-pass" required />
+            <label for="check-password">Check password:</label>
+            <input
+                type="text"
+                name="check-password"
+                id="chk-user-pass"
+                required
+            />
+
+            <div id="btn-box">
+                <a class="btn btn-full" id="signBtn" href="#">Sign up</a>
+                <a class="btn btn-ghost" id="close-modal-btn" href="#">Close</a>
+            </div>
+
+            <div id="errors"></div>
+            <!-- </div> -->
+        </dialog>
+
+        <dialog class="dialog-login">
+            <!-- <div id="modal-box">  -->
+            <h3>Login</h3>
+            <label for="name">User name:</label>
+            <input type="text" name="name" id="log-user-name" required />
+            <label for="password">User password:</label>
+            <input type="text" name="password" id="log-user-pass" required />
+
+            <div id="btn-box">
+                <a class="btn btn-full" id="loginBtn" href="#">Log in</a>
+                <a class="btn btn-ghost" id="close-log-modal-btn" href="#"
+                    >Close</a
+                >
+            </div>
+
+            <div id="login-res"></div>
+            <!-- </div> -->
+        </dialog>
+
+        <script defer src="./res/js/classes.js"></script>
+        <script defer src="./res/js/main.js"></script>
     </body>
 </html>
 

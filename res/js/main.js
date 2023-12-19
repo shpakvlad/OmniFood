@@ -1,12 +1,17 @@
 /************************************************/
-/*                    SCROLL                    */
+/*                    SWIPER                    */
 /************************************************/
-let lastKnowPos = 0;
+const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+        delay: 4000,
+    },
+    pagination: true,
+});
 
-document.addEventListener("scroll", (event) => {
-    lastKnowPos = window.scrollY;
-
-    if (lastKnowPos > 100) {
-        console.log(lastKnowPos);
-    }
-})
+/************************************************/
+/*                   CLASSES                    */
+/************************************************/
+const signUp = new UsersController(new UsersModel, new UsersView);
+signUp.init();
