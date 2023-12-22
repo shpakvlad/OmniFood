@@ -104,4 +104,46 @@ export const data = [
             },
         ],
     },
+
+    {
+        name: "meals",
+        class: "meals-showcase",
+        figClass: "meal-photo",
+
+        images: [
+            {
+                src: "./res/img/bg/1.jpg",
+                alt: "Korean bibimbap with egg and vegetables",
+            },
+            {
+                src: "./res/img/bg/2.jpg",
+                alt: "Simple italian pizza with cherry tomatoes",
+            },
+            {
+                src: "./res/img/bg/3.jpg",
+                alt: "Chicken breast steak with vegetables",
+            },
+            {
+                src: "./res/img/bg/4.jpg",
+                alt: "Autumn pumpkin soup",
+            },
+            {
+                src: "./res/img/bg/5.jpg",
+                alt: "Paleo beef steak with vegetables",
+            },
+            {
+                src: "./res/img/bg/6.jpg",
+                alt: "Healthy baguette with egg and vegetables",
+            },
+            {
+                src: "./res/img/bg/7.jpg",
+                alt: "Burger with cheddar and bacon",
+            },
+            {
+                src: "./res/img/bg/8.jpg",
+                alt: "Granola with cherries and strawberries",
+            },
+            
+        ],
+    },
 ];

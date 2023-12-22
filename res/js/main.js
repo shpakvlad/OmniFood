@@ -26,10 +26,11 @@ function setData() {
     data.forEach((element) => {
         if (element.name == "header") {
             /* ===== HEADER ===== */
-            let header = document.querySelector("header .container");
+            let header = selectEl("header .container");
+            // let header = document.querySelector("header .container");
 
             //logo
-            const img = document.createElement("img");
+            const img = createEl("img");
 
             img.className = element.logo.class;
             img.setAttribute("src", element.logo.link);
@@ -37,9 +38,9 @@ function setData() {
             header.append(img);
 
             //nav
-            const nav = document.createElement("nav");
+            const nav = createEl("nav");
             element.nav.forEach((element) => {
-                const a = document.createElement("a");
+                const a = createEl("a");
                 a.setAttribute("href", element.link);
                 a.textContent = element.text;
                 if (element.hasOwnProperty("id")) {
@@ -51,18 +52,18 @@ function setData() {
             header.append(nav);
 
             //hero
-            const hero = document.createElement("div");
+            const hero = createEl("div");
             hero.className = element.hero.class;
 
-            const h1 = document.createElement("h1");
+            const h1 = createEl("h1");
             h1.innerHTML = element.hero.text;
             hero.appendChild(h1);
 
-            element.hero.buttons.forEach((element) => {
-                const a = document.createElement("a");
-                a.textContent = element.text;
-                a.setAttribute("href", element.link);
-                a.className = element.class;
+            element.hero.buttons.forEach((elem) => {
+                const a = createEl("a");
+                a.textContent = elem.text;
+                a.setAttribute("href", elem.link);
+                a.className = elem.class;
 
                 hero.appendChild(a);
             });
@@ -71,14 +72,15 @@ function setData() {
 
         /* ===== FEATURES ===== */
         if (element.name == "features") {
-            let features = document.querySelector(
-                ".section-features .container"
-            );
+            let features = selectEl(".section-features .container");
+            // let features = document.querySelector(
+            //     ".section-features .container"
+            // );
 
-            const h2 = document.createElement("h2");
+            const h2 = createEl("h2");
             h2.innerHTML = element.h2;
 
-            const p = document.createElement("p");
+            const p = createEl("p");
             p.className = element.p.class;
             p.innerHTML = element.p.text;
 
@@ -86,29 +88,67 @@ function setData() {
             features.append(p);
 
             /* ===== CARDS ===== */
-            const featuresBoxes = document.querySelector(
+            const featuresBoxes = selectEl(
                 ".section-features .container:nth-child(2)"
             );
 
-            element.boxes.forEach((element) => {
-                const div = document.createElement("div");
-                div.className = element.class;
+            element.boxes.forEach((elem) => {
+                const div = createEl("div");
+                div.className = elem.class;
 
-                const ion = document.createElement("ion-icon");
-                ion.className = element.ionicon.class;
-                ion.setAttribute("name", element.ionicon.name);
+                const ion = createEl("ion-icon");
+                ion.className = elem.ionicon.class;
+                ion.setAttribute("name", elem.ionicon.name);
                 div.appendChild(ion);
 
-                const h3 = document.createElement("h3");
-                h3.textContent = element.h3;
+                const h3 = createEl("h3");
+                h3.textContent = elem.h3;
                 div.appendChild(h3);
 
-                const p = document.createElement("p");
-                p.textContent = element.p;
+                const p = createEl("p");
+                p.textContent = elem.p;
                 div.appendChild(p);
 
                 featuresBoxes.append(div);
             });
         }
+
+        /* ===== MEALS ===== */
+        if (element.name == "meals") {
+            let showCaseRow1 = selectEl(".section-meals .meals-showcase");
+            let showCaseRow2 = selectEl(".section-meals .meals-showcase:nth-child(2)");
+
+            let counter = 0
+            element.images.forEach((elem) => {
+                let li = createEl("li");
+                let figure = createEl("figure");
+                figure.className = element.figClass;
+                let img = createEl("img");
+                img.setAttribute("src", elem.src);
+                img.setAttribute("alt", elem.alt);
+                figure.append(img);
+                li.appendChild(figure);
+
+                counter++;
+                if (counter <= 4) {
+                    
+                    showCaseRow1.append(li);
+                } else {
+                    showCaseRow2.append(li);
+                }
+
+
+
+            });
+
+        }
     });
+}
+
+function selectEl(element) {
+    return document.querySelector(element);
+}
+
+function createEl(element) {
+    return document.createElement(element);
 }
