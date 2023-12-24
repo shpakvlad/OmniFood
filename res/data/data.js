@@ -143,7 +143,174 @@ export const data = [
                 src: "./res/img/bg/8.jpg",
                 alt: "Granola with cherries and strawberries",
             },
-            
         ],
+    },
+
+    {
+        name: "steps",
+        h2: "HOW IT WORKS – SIMPLE AS 1, 2, 3",
+        img: {
+            class: "animate__animated animate__pulse animate__infinite animate__fast app-screen ",
+            src: "./res/img/png/app-iPhone.png",
+            alt: "Omni food app on iPhone",
+        },
+        steps: [
+            {
+                class: "works-step",
+                number: "1",
+                p: "Choose the subscription plan that best fits your needs and sign up today.",
+            },
+            {
+                class: "works-step",
+                number: "2",
+                p: "Order your delicious meal using our mobile app or website. Or you can even call us!",
+            },
+            {
+                class: "works-step",
+                number: "3",
+                p: "Enjoy your meal after less than 20 minutes. See you the next time!",
+            },
+        ],
+
+        btnanel: {
+            class: "loadbtn-panel",
+            buttons: [
+                {
+                    link: "#",
+                    class: "btn-app",
+                    src: "./res/img/svg/download-app.svg",
+                    alt: "App store button",
+                },
+                {
+                    link: "#",
+                    class: "btn-app",
+                    src: "./res/img/png/download-app-android.png",
+                    alt: "Android store button",
+                },
+            ],
+        },
+    },
+
+    {
+        name: "cities",
+        h2: "We're currently in these cities",
+
+        cities: {
+            class: "box",
+            boxes: [
+                {
+                    src: "./res/img/bg/lisbon-3.jpg",
+                    alt: "Lisbon",
+                    h3: "Lisbon",
+
+                    features: {
+                        class: "city-feature",
+                        data: [
+                            {
+                                class: "icon-small hydrated",
+                                name: "person",
+                                text: "1600+ happy eaters",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "star",
+                                text: "60+ top chefs",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "logo-twitter",
+                                link: '<a href="#">@omnifood_lx</a>',
+                            },
+                        ],
+                        // link: "#",
+                        // linktext: "@omnifood_lx",
+                    },
+                },
+                {
+                    src: "./res/img/bg/san-francisco.jpg",
+                    alt: "San francisco",
+                    h3: "San Francisco",
+
+                    features: {
+                        class: "city-feature",
+                        data: [
+                            {
+                                class: "icon-small hydrated",
+                                name: "person",
+                                text: "3700+ happy eaters",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "star",
+                                text: "160+ top chefs",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "logo-twitter",
+                                link: '<a href="#">@omnifood_sf</a>',
+                            },
+                        ],
+                        // link: "#",
+                        // linktext: "@omnifood_lx",
+                    },
+                },
+                {
+                    src: "./res/img/bg/berlin.jpg",
+                    alt: "Berlin",
+                    h3: "Berlin",
+
+                    features: {
+                        class: "city-feature",
+                        data: [
+                            {
+                                class: "icon-small hydrated",
+                                name: "person",
+                                text: "2300+ happy eaters",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "star",
+                                text: "110+ top chefs",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "logo-twitter",
+                                link: '<a href="#">@omnifood_berlin</a>',
+                            },
+                        ],
+                        // link: "#",
+                        // linktext: "@omnifood_berlin",
+                    },
+                },
+                {
+                    src: "./res/img/bg/london.jpg",
+                    alt: "London",
+                    h3: "London",
+
+                    features: {
+                        class: "city-feature",
+                        data: [
+                            {
+                                class: "icon-small hydrated",
+                                name: "person",
+                                text: "1200+ happy eaters",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "star",
+                                text: "50+ top chefs",
+                            },
+                            {
+                                class: "icon-small hydrated",
+                                name: "logo-twitter",
+                                link: '<a href="#">@omnifood_london</a>',
+                            },
+                        ],
+                        // link: "#",
+                        // linktext: "@omnifood_london",
+                    },
+                },
+            ],
+        },
     },
 ];
