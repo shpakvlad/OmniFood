@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shpakvlad/OmniFood/issues"
   },
-  "homepage": "https://github.com/shpakvlad/OmniFood#readme"
+  "homepage": "https://github.com/shpakvlad/OmniFood#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
