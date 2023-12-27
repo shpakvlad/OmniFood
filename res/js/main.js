@@ -1,15 +1,45 @@
 import { data } from "../data/data.js";
 
+import { menu } from "../data/menu.js";
+const render = new RenderData(menu);
+render.renderData(0, 5);
+
 /************************************************/
 /*                    SWIPER                    */
 /************************************************/
-const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
+new Swiper(".swiper", {
+    // direction: "horizontal",
+    // loop: true,
+    autoHeigh: true,
+    freeMode: true,
+    speed: 1000,
     autoplay: {
-        delay: 4000,
+        delay: 3000,
     },
-    pagination: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centerdSlaides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    keyboard: true,
+    onlyInViewport: true,
+
+    // effect: "coverflow",
+    // coverflowEffect: {
+    //     depth: 200,
+    //     modifier: 0.7,
+    //     rotate: 50,
+    //     stretch: 100,
+
+    //     slideShadows: true,
+    // }
 });
 
 /************************************************/
@@ -241,3 +271,25 @@ function selectEl(element) {
 function createEl(element) {
     return document.createElement(element);
 }
+
+
+/************************************************/
+/*                     MENU                     */
+/************************************************/
+
+
+let start = 0;
+let stop = 5;
+
+const loadBtn = document
+    .querySelector("#load-btn")
+    .addEventListener("click", () => {
+
+        console.log(loadBtn);
+
+        start = start + 5;
+        stop = stop + 5;
+
+        render.renderData(start, stop);
+    });
+
