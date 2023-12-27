@@ -1,0 +1,42 @@
+/************************************************/
+/*                   HEADINGS                   */
+/************************************************/
+@mixin headings {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    @include headings;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--bg-color);
+    font-size: 240%; /* === 140px === */
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    @include headings;
+    margin-bottom: 30px;
+    font-size: 180%; /* === 28.8PX === */
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h3 {
+    @include headings;
+    font-size: 110%; /* === 17.7px === */
+    margin-bottom: 15px;
+}
+
+h2:after {
+    content: " ";
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    background-color: var(--accent-color);
+}
